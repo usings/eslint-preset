@@ -1,0 +1,5 @@
+export * from 'eslint-preset-astro/modules'
+export * from 'eslint-preset-basic/modules'
+export * from 'eslint-preset-solid/modules'
+export * from 'eslint-preset-react/modules'
+export * from 'eslint-preset-vue/modules'

@@ -1,0 +1,49 @@
+{
+  "name": "eslint-preset-vue",
+  "version": "2.1.0",
+  "type": "module",
+  "description": "ESLint preset for vue",
+  "author": "Joie <leaps@live.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/usings/eslint-preset/tree/main/packages/eslint-preset-vue",
+  "keywords": [
+    "eslint-config",
+    "eslint-flat-config",
+    "eslint-preset"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./configs": {
+      "import": "./dist/configs.mjs",
+      "types": "./dist/configs.d.ts"
+    },
+    "./modules": {
+      "import": "./dist/modules.mjs",
+      "types": "./dist/modules.d.ts"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "*.d.ts"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "stub": "unbuild --stub"
+  },
+  "dependencies": {
+    "eslint-plugin-vue": "^9.17.0",
+    "vue-eslint-parser": "^9.3.1"
+  },
+  "peerDependencies": {
+    "eslint-preset-basic": "workspace:*"
+  },
+  "devDependencies": {
+    "eslint-preset-basic": "workspace:*"
+  }
+}

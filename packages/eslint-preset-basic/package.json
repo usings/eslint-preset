@@ -1,0 +1,54 @@
+{
+  "name": "eslint-preset-basic",
+  "version": "2.1.0",
+  "type": "module",
+  "description": "ESLint basic preset",
+  "author": "Joie <leaps@live.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/usings/eslint-preset/tree/main/packages/eslint-preset-basic",
+  "keywords": [
+    "eslint-config",
+    "eslint-flat-config",
+    "eslint-preset"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./configs": {
+      "import": "./dist/configs/index.mjs",
+      "types": "./dist/configs/index.d.ts"
+    },
+    "./modules": {
+      "import": "./dist/modules.mjs",
+      "types": "./dist/modules.d.ts"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "stub": "unbuild --stub"
+  },
+  "dependencies": {
+    "@stylistic/eslint-plugin": "^0.0.6",
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "eslint-define-config": "^1.23.0",
+    "eslint-plugin-i": "^2.28.1",
+    "eslint-plugin-unicorn": "^48.0.1",
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "globals": "^13.22.0"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.44.3"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.28.0"
+  }
+}

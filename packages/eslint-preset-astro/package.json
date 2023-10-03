@@ -1,0 +1,48 @@
+{
+  "name": "eslint-preset-astro",
+  "version": "2.1.0",
+  "type": "module",
+  "description": "ESLint preset for astro",
+  "author": "Joie <leaps@live.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/usings/eslint-preset/tree/main/packages/eslint-preset-astro",
+  "keywords": [
+    "eslint-config",
+    "eslint-flat-config",
+    "eslint-preset"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./configs": {
+      "import": "./dist/configs.mjs",
+      "types": "./dist/configs.d.ts"
+    },
+    "./modules": {
+      "import": "./dist/modules.mjs",
+      "types": "./dist/modules.d.ts"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "stub": "unbuild --stub"
+  },
+  "dependencies": {
+    "astro-eslint-parser": "^0.15.0",
+    "eslint-plugin-astro": "^0.29.0"
+  },
+  "devDependencies": {
+    "eslint-preset-basic": "workspace:*"
+  },
+  "peerDependencies": {
+    "eslint-preset-basic": "workspace:*"
+  }
+}
