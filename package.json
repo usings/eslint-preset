@@ -7,8 +7,8 @@
   "scripts": {
     "stub": "pnpm -r run stub",
     "build": "pnpm -r run build",
-    "pub": "changeset publish",
-    "release": "pnpm build && changeset && pnpm pub"
+    "pub": "changeset && changeset version &&changeset publish",
+    "release": "pnpm build && pnpm pub"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
