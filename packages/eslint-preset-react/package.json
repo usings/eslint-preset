@@ -1,6 +1,6 @@
 {
   "name": "eslint-preset-react",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "type": "module",
   "description": "ESLint preset for react",
   "author": "Joie <leaps@live.com>",
@@ -9,7 +9,8 @@
   "keywords": [
     "eslint-config",
     "eslint-flat-config",
-    "eslint-preset"
+    "eslint-preset",
+    "react"
   ],
   "exports": {
     ".": {
