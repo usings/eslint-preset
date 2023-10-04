@@ -9,12 +9,8 @@
 <p align="center">Shareable ESLint Flat Configs.</p>
 
 <p align="center">
-  <a href="https://github.com/usings/eslint-preset">
-    <img src="https://img.shields.io/npm/v/eslint-presets?style=flat&color=444&label=version">
-  </a>
-  <a href="https://github.com/usings">
-    <img disabled src="https://img.shields.io/badge/enjoy%20!-8080EB?style=flat">
-  </a>
+  <img disabled src="https://img.shields.io/badge/Practice%20makes%20perfect-444?style=flat">
+  <img disabled src="https://img.shields.io/badge/enjoy!-8080EB?style=flat">
 </p>
 
 <br>
