@@ -7,7 +7,7 @@
   "scripts": {
     "stub": "pnpm -r run stub",
     "build": "pnpm -r run build",
-    "pub": "changeset && changeset version &&changeset publish",
+    "pub": "changeset && changeset version && changeset publish",
     "release": "pnpm build && pnpm pub"
   },
   "devDependencies": {
