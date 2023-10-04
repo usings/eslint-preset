@@ -1,6 +1,6 @@
 {
   "name": "eslint-preset-astro",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "type": "module",
   "description": "ESLint preset for astro",
   "author": "Joie <leaps@live.com>",

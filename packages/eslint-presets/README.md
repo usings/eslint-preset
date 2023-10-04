@@ -8,7 +8,7 @@
 [![version][src-version]][href-npm]
 [![downloads][src-download]][href-npm]
 
-Shareable ESLint flat config presets.
+Shareable ESLint config presets.
 
 ## Usage
 
