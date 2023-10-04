@@ -56,10 +56,6 @@ module.exports = (async () => {
 }
 ```
 
-> Please support this project by simply putting a star.
->
-> And, enjoy :)
-
 ## VS Code support
 
 Install [VS Code ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
@@ -87,3 +83,7 @@ Add the following settings to your project setting `.vscode/settings.json`:
   ]
 }
 ```
+
+> Please support this project by simply putting a star.
+>
+> And, enjoy :)
