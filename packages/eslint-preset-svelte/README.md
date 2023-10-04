@@ -88,7 +88,7 @@ Add the following settings to your project setting `.vscode/settings.json`:
     "javascriptreact",
     "typescript",
     "typescriptreact",
-    "astro"
+    "svelte"
   ]
 }
 ```
