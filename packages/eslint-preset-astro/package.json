@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "astro-eslint-parser": "^0.15.0",
-    "eslint-plugin-astro": "^0.29.0"
+    "eslint-plugin-astro": "^0.29.1"
   },
   "devDependencies": {
     "eslint-preset-basic": "workspace:*"
