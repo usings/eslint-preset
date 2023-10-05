@@ -141,7 +141,10 @@ export const javascript = (): FlatESLintConfig[] => {
         'no-restricted-globals': 'off',
         'no-restricted-imports': 'off',
         'no-restricted-properties': 'off',
-        'no-restricted-syntax': 'off',
+        'no-restricted-syntax': [
+          'error',
+          'DebuggerStatement', 'LabeledStatement', 'WithStatement', 'TSEnumDeclaration[const=true]', 'TSExportAssignment',
+        ],
         'no-return-assign': ['error', 'always'],
         'no-return-await': 'off',
         'no-script-url': 'off',
