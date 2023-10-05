@@ -1,6 +1,6 @@
 import type { FlatESLintConfig } from '../types'
 import { parserTs, pluginTs } from '../modules'
-import { GLOB_CJS, GLOB_CTS, GLOB_TS, GLOB_TSX } from '../globs'
+import { GLOB_CJS, GLOB_TS, GLOB_TSX } from '../globs'
 
 export const typescript = (): FlatESLintConfig[] => {
   return [
@@ -46,7 +46,7 @@ export const typescript = (): FlatESLintConfig[] => {
       },
     },
     {
-      files: [GLOB_CJS, GLOB_CTS],
+      files: [GLOB_CJS],
       rules: {
         '@typescript-eslint/no-require-imports': 'off',
         '@typescript-eslint/no-var-requires': 'off',

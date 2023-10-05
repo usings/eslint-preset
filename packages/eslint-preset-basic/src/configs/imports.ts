@@ -1,5 +1,6 @@
 import type { FlatESLintConfig } from '../types'
 import { pluginImport, pluginUnusedImports } from '../modules'
+import { GLOB_DTS } from '../globs'
 
 export const imports = (): FlatESLintConfig[] => {
   return [
@@ -53,7 +54,7 @@ export const imports = (): FlatESLintConfig[] => {
       },
     },
     {
-      files: ['**/*.d.?([cm])ts'],
+      files: [GLOB_DTS],
       rules: {
         'import/no-default-export': 'off',
         'import/no-duplicates': 'off',
