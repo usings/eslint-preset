@@ -33,8 +33,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "unbuild",
-    "stub": "unbuild --stub"
+    "build": "unbuild"
   },
   "dependencies": {
     "eslint-plugin-react": "^7.33.2",

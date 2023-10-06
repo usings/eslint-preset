@@ -32,8 +32,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "unbuild",
-    "stub": "unbuild --stub"
+    "build": "unbuild"
   },
   "dependencies": {
     "eslint-preset-astro": "workspace:*",

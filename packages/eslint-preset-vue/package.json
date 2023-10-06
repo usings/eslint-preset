@@ -34,8 +34,7 @@
     "*.d.ts"
   ],
   "scripts": {
-    "build": "unbuild",
-    "stub": "unbuild --stub"
+    "build": "unbuild"
   },
   "dependencies": {
     "eslint-plugin-vue": "^9.17.0",
