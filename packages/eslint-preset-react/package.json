@@ -1,6 +1,6 @@
 {
   "name": "eslint-preset-react",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "type": "module",
   "description": "ESLint preset for react",
   "author": "Joie <leaps@live.com>",
