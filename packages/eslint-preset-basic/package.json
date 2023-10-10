@@ -35,10 +35,10 @@
     "build": "unbuild"
   },
   "dependencies": {
-    "@stylistic/eslint-plugin": "^0.0.6",
-    "@typescript-eslint/eslint-plugin": "^6.7.4",
-    "@typescript-eslint/parser": "^6.7.4",
-    "eslint-define-config": "^1.23.0",
+    "@stylistic/eslint-plugin": "^0.0.8",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "@typescript-eslint/parser": "^6.7.5",
+    "eslint-define-config": "^1.24.1",
     "eslint-plugin-i": "^2.28.1",
     "eslint-plugin-unicorn": "^48.0.1",
     "eslint-plugin-unused-imports": "^3.0.0",
