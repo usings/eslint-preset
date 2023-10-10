@@ -4,9 +4,7 @@ import { pluginStylistic } from '../modules'
 export const stylistic = (): FlatESLintConfig[] => {
   return [
     {
-      plugins: {
-        '@stylistic': pluginStylistic,
-      },
+      plugins: { '@stylistic': pluginStylistic },
       rules: {
         'curly': ['error', 'multi-or-nest', 'consistent'],
 

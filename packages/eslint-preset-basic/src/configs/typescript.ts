@@ -1,6 +1,6 @@
 import type { FlatESLintConfig } from '../types'
 import { parserTs, pluginTs } from '../modules'
-import { GLOB_CJS, GLOB_TS, GLOB_TSX } from '../globs'
+import { GLOB_CJS, GLOB_DTS, GLOB_TS, GLOB_TSX } from '../globs'
 
 export const typescript = (): FlatESLintConfig[] => {
   return [
@@ -12,9 +12,7 @@ export const typescript = (): FlatESLintConfig[] => {
           sourceType: 'module',
         },
       },
-      plugins: {
-        '@typescript-eslint': pluginTs,
-      },
+      plugins: { '@typescript-eslint': pluginTs },
       rules: {
         ...(pluginTs as any).configs['eslint-recommended'].overrides[0].rules,
         ...(pluginTs as any).configs['strict'].rules,
@@ -32,6 +30,7 @@ export const typescript = (): FlatESLintConfig[] => {
         '@typescript-eslint/no-dynamic-delete': 'off',
         '@typescript-eslint/no-explicit-any': 'off',
         '@typescript-eslint/no-extraneous-class': 'off',
+        '@typescript-eslint/no-import-type-side-effects': 'error',
         '@typescript-eslint/no-non-null-assertion': 'off',
         '@typescript-eslint/no-invalid-this': 'error',
         '@typescript-eslint/no-invalid-void-type': 'error',
@@ -43,6 +42,12 @@ export const typescript = (): FlatESLintConfig[] => {
         '@typescript-eslint/prefer-ts-expect-error': 'error',
         '@typescript-eslint/triple-slash-reference': 'off',
         '@typescript-eslint/unified-signatures': 'error',
+      },
+    },
+    {
+      files: [GLOB_DTS],
+      rules: {
+        'no-restricted-syntax': 'off',
       },
     },
     {

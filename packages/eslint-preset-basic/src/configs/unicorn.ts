@@ -4,9 +4,7 @@ import { pluginUnicorn } from '../modules'
 export const unicorn = (): FlatESLintConfig[] => {
   return [
     {
-      plugins: {
-        unicorn: pluginUnicorn,
-      },
+      plugins: { unicorn: pluginUnicorn },
       rules: {
         ...(pluginUnicorn as any).configs.recommended.rules,
 

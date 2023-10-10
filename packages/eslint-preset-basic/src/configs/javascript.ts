@@ -19,6 +19,9 @@ export const javascript = (): FlatESLintConfig[] => {
         },
         sourceType: 'module',
       },
+      linterOptions: {
+        reportUnusedDisableDirectives: true,
+      },
       rules: {
         'accessor-pairs': ['error', { getWithoutSet: false, setWithoutGet: true }],
         'array-callback-return': 'error',

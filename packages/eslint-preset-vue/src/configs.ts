@@ -6,9 +6,7 @@ export type OptionsVue = OptionsTypescript & OptionsOverrides
 
 export const vue = ({ enableTs = true, overrides = {} }: OptionsVue = {}): FlatESLintConfig[] => {
   return [
-    {
-      ignores: ['**/.nuxt'],
-    },
+    { ignores: ['**/.nuxt'] },
     {
       files: ['**/*.vue'],
       languageOptions: {
@@ -22,9 +20,7 @@ export const vue = ({ enableTs = true, overrides = {} }: OptionsVue = {}): FlatE
           sourceType: 'module',
         },
       },
-      plugins: {
-        vue: pluginVue,
-      },
+      plugins: { vue: pluginVue },
       processor: pluginVue.processors!['.vue'],
       rules: {
         ...(pluginVue as any).configs['base'].rules,

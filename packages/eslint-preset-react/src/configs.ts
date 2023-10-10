@@ -7,9 +7,7 @@ export type OptionsReact = OptionsTypescript & OptionsOverrides
 
 export const react = ({ enableTs = true, overrides = {} }: OptionsReact = {}): FlatESLintConfig[] => {
   return [
-    {
-      ignores: ['**/.next'],
-    },
+    { ignores: ['**/.next'] },
     {
       files: enableTs ? [GLOB_JSX, GLOB_TSX] : [GLOB_JSX],
       languageOptions: {

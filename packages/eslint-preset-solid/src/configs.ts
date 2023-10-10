@@ -17,9 +17,7 @@ export const solid = ({ enableTs = true, overrides = {} }: OptionsSolid = {}): F
           },
         },
       },
-      plugins: {
-        solid: pluginSolid,
-      },
+      plugins: { solid: pluginSolid },
       rules: {
         ...(enableTs
           ? (pluginSolid as any).configs.typescript.rules

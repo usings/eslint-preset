@@ -6,9 +6,7 @@ export type OptionsSvelte = OptionsTypescript & OptionsOverrides
 
 export const svelte = ({ enableTs = true, overrides = {} }: OptionsSvelte = {}): FlatESLintConfig[] => {
   return [
-    {
-      ignores: ['**/.svelte-kit'],
-    },
+    { ignores: ['**/.svelte-kit'] },
     {
       files: ['**/*.svelte'],
       languageOptions: {
@@ -19,9 +17,7 @@ export const svelte = ({ enableTs = true, overrides = {} }: OptionsSvelte = {}):
           sourceType: 'module',
         },
       },
-      plugins: {
-        svelte: pluginSvelte,
-      },
+      plugins: { svelte: pluginSvelte },
       processor: pluginSvelte.processors!['.svelte'],
       rules: {
         ...(pluginSvelte as any).configs['recommended'].rules,

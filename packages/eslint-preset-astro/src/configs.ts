@@ -6,9 +6,7 @@ export type OptionsAstro = OptionsTypescript & OptionsOverrides
 
 export const astro = ({ enableTs = true, overrides = {} }: OptionsAstro = {}): FlatESLintConfig[] => {
   return [
-    {
-      ignores: ['**/.astro'],
-    },
+    { ignores: ['**/.astro'] },
     {
       files: ['**/*.astro'],
       languageOptions: {
@@ -19,9 +17,7 @@ export const astro = ({ enableTs = true, overrides = {} }: OptionsAstro = {}): F
           sourceType: 'module',
         },
       },
-      plugins: {
-        astro: pluginAstro,
-      },
+      plugins: { astro: pluginAstro },
       processor: pluginAstro.processors!['.astro'],
       rules: {
         ...(pluginAstro as any).configs['recommended'].rules,
