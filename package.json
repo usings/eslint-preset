@@ -1,7 +1,6 @@
 {
-  "name": "eslint-preset",
-  "version": "next",
   "private": true,
+  "name": "eslint-preset",
   "type": "module",
   "packageManager": "pnpm@8.8.0",
   "scripts": {

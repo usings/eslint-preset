@@ -1,6 +1,6 @@
 {
   "name": "eslint-preset-basic",
-  "version": "2.2.2",
+  "version": "2.3.0",
   "type": "module",
   "description": "ESLint basic preset",
   "author": "Joie <leaps@live.com>",
