@@ -1,6 +1,6 @@
 {
   "name": "eslint-preset-svelte",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "type": "module",
   "description": "ESLint preset for svelte",
   "author": "Joie <leaps@live.com>",
