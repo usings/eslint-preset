@@ -189,7 +189,6 @@ export const javascript = (): FlatESLintConfig[] => {
         'no-useless-rename': 'error',
         'no-useless-return': 'off',
         'no-var': 'error',
-        'no-void': 'error',
         'no-warning-comments': 'off',
         'no-with': 'error',
         'object-shorthand': ['error', 'always', { avoidQuotes: true, ignoreConstructors: false }],
