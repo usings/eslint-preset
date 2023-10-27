@@ -15,6 +15,8 @@ export const unicorn = (): FlatESLintConfig[] => {
             ignore: [/^[A-Z]+\..*$/],
           },
         ],
+        'unicorn/consistent-function-scoping': 'warn',
+        'unicorn/no-array-for-each': 'off',
         'unicorn/prefer-top-level-await': 'warn',
         'unicorn/prevent-abbreviations': 'warn',
       },
