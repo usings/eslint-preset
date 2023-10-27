@@ -11,7 +11,7 @@ export const stylistic = (): FlatESLintConfig[] => {
         '@stylistic/array-bracket-spacing': ['error', 'never'],
         '@stylistic/arrow-spacing': ['error', { after: true, before: true }],
         '@stylistic/block-spacing': ['error', 'always'],
-        '@stylistic/brace-style': ['error', 'stroustrup', { allowSingleLine: true }],
+        '@stylistic/brace-style': ['error', '1tbs'],
         '@stylistic/comma-dangle': ['error', 'always-multiline'],
         '@stylistic/comma-spacing': ['error', { after: true, before: false }],
         '@stylistic/comma-style': ['error', 'last'],
