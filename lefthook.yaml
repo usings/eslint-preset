@@ -3,6 +3,10 @@
 #   https://github.com/evilmartians/lefthook/blob/master/docs/configuration.md
 #
 
+skip_output:
+  - meta
+  - skips
+
 pre-commit:
   commands:
     eslint:
